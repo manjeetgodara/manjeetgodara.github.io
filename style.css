@@ -360,6 +360,23 @@ section{
     width:100%;
 }
 
+#git-stat div{
+    display: flex;
+}
+
+#github-streak-stats{
+    margin-left:20px;
+    margin-right: 30px;
+}
+
+#github-top-langs{
+    margin: auto;
+}
+
+#github-stats-card{
+    margin:auto;
+}
+
 /* contact */
 #contact{
     padding: 100px 0;
@@ -522,8 +539,30 @@ footer span a:hover{
     }
 
     .git-content .calender{
-        width:70%;
+        width:20%;
+        margin: auto;
         font-size: medium;
+    }
+
+    #git-stat div{
+        flex-direction: column;
+    }
+
+    #github-streak-stats{
+    
+       
+        margin:auto;
+        width:70%;
+    }
+    
+    #github-top-langs{
+        margin: auto;
+        width:70%;
+    }
+
+    #github-stats-card{
+        margin:auto;
+        width:70%;
     }
   
 }

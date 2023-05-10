@@ -27,7 +27,7 @@
       <li><a class="nav-link projects" href="#projects">Projects</a></li>
       <li><a  href="#git">Gitstat</a></li>
       <li><a  href="#contact">Contact</a></li>
-      <li><a class="nav-link resume" id="resume-button-1" href="images/Manjeet-Resume.pdf" download="Manjeet-Resume">Download CV</a></li>
+      <li><a class="nav-link resume" id="resume-link-1" href="images/Manjeet-Resume.pdf" download="Manjeet-Resume" target="_blank">Download CV</a></li>
     </ul>
     <div class="menu-btn">
       <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -43,7 +43,7 @@
        <div class="text-1">Hello, my name is</div>
        <div id="user-detail-name" class="text-2">Manjeet</div>
        <div class="text-3">And I'm a <span class="typing"></span></div>
-       <a class="nav-link resume" id="resume-button-2" href="https://drive.google.com/file/d/1LowGVG__83RtR2XJ6G_dDYZuLQUe1eMb/view?usp=share_link" target="_blank">Resume</a>
+       <a class="nav-link resume" id="resume-button-2"  href="images/Manjeet-Resume.pdf" download="Manjeet-Resume" target="_blank">Resume</a>
        <a style="margin-left: 10px" href="#project">Projects</a>
      </div>
     </div>
@@ -59,12 +59,12 @@
        </div>
        <div class="column right">
         <h1 class="text">MySelf</h1><br>
-        <p id="user-detail-intro">Hello! My name is Manjeet. I have graduated in B.Tech Mechanical Engg.
+        <p >Hello! My name is Manjeet. I have graduated in B.Tech Mechanical Engg.
          Now a passionate developer, having strong administrative and communication skill. I have completed the full stack web development(Full-Time) course in
          Masai (Skilling platform) with immense 1200+ coding and industry level projects.</p><br>
         <br>
         <h1 class="text">Professional Summary</h1><br>
-        <p>A highly motivated and ambitious web developer boasts a strong proficiency in HTML, CSS, and JavaScript, having amassed over 1300 hours of hands-on experience and successfully developed two fully functional cloned web applications. Their impressive work speaks to their ability to create clean, efficient, and user-friendly interfaces. They excel in collaborative settings and are known for their problem-solving mindset, as well as their strong communication skills which make them a valuable team member. They take pride in delivering high-quality work and meeting project deadlines, and are eager to leverage their skills and experience to contribute to a challenging and exciting role in a dynamic tech company.</p>
+        <p id="user-detail-intro">A highly motivated and ambitious web developer boasts a strong proficiency in HTML, CSS, and JavaScript, having amassed over 1300 hours of hands-on experience and successfully developed two fully functional cloned web applications. Their impressive work speaks to their ability to create clean, efficient, and user-friendly interfaces. They excel in collaborative settings and are known for their problem-solving mindset, as well as their strong communication skills which make them a valuable team member. They take pride in delivering high-quality work and meeting project deadlines, and are eager to leverage their skills and experience to contribute to a challenging and exciting role in a dynamic tech company.</p>
        </div>
      </div>
     </div>
@@ -186,7 +186,7 @@
 
   <!-- project section -->
 
-  <section class="nav-link projects project" id="projects">
+  <section class="project" id="projects">
     <div class="max-width">
       <h2 class="title">Projects</h2>
      <div class="project-content">
@@ -294,8 +294,31 @@
       <!-- Loading stuff -->
       Loading the data just for you.
   </div>
+
+  <br>
+  <div id="git-stat">
+    <div>
+      <img id="github-streak-stats"
+        src="https://github-readme-streak-stats.herokuapp.com?user=manjeetgodara&theme=react&border_radius=6.5&date_format=M%20j%5B%2C%20Y%5D"
+        alt="streak-stat" />
+      <br>
+      <img id="github-stats-card"
+        src="https://github-readme-stats.vercel.app/api?username=manjeetgodara&count_private=true&theme=react"
+        alt="stat-card" />
+    </div>
+    <br>
+    <div>
+      <img id="github-top-langs"
+        src="https://github-readme-stats.vercel.app/api/top-langs/?username=manjeetgodara&theme=react"
+        alt="top_languages" />
+    </div>
+  </div>
+
+
+
    </div>
   </div>
+
 </section>
 
 <!-- contacts -->
