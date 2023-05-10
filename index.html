@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+ 
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script  src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+  <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- navbar -->
+
+  <nav id="nav-menu" class="navbar">
+ <div class="max-width">
+  <div class="logo"><a href="#home">Portfo<span>lio.</a></div>
+    <ul class="menu .nav-link.home">
+      <li><a  href="#home">Home</a></li>
+      <li><a  href="#about">About</a></li>
+      <li><a  href="#skills">Skills</a></li>
+      <li><a class="nav-link projects" href="#projects">Projects</a></li>
+      <li><a  href="#git">Gitstat</a></li>
+      <li><a  href="#contact">Contact</a></li>
+      <li><a class="nav-link resume" id="resume-button-1" href="images/Manjeet-Resume.pdf" download="Manjeet-Resume">Download CV</a></li>
+    </ul>
+    <div class="menu-btn">
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </div>
+ </div>
+
+  </nav>
+
+  <!-- home-section start -->
+  <section class="nav-link home" id="home">
+    <div class="max-width">
+     <div class="home-content">
+       <div class="text-1">Hello, my name is</div>
+       <div id="user-detail-name" class="text-2">Manjeet</div>
+       <div class="text-3">And I'm a <span class="typing"></span></div>
+       <a class="nav-link resume" id="resume-button-2" href="https://drive.google.com/file/d/1LowGVG__83RtR2XJ6G_dDYZuLQUe1eMb/view?usp=share_link" target="_blank">Resume</a>
+       <a style="margin-left: 10px" href="#project">Projects</a>
+     </div>
+    </div>
+  </section>
+
+  <!-- about -->
+  <section class="nav-link about section" id="about">
+    <div class="max-width">
+      <h2 class="title">About Me</h2>
+     <div class="about-content">
+       <div class="column left">
+        <img class="home-img" src="images/myphoto.png" alt="">
+       </div>
+       <div class="column right">
+        <h1 class="text">MySelf</h1><br>
+        <p id="user-detail-intro">Hello! My name is Manjeet. I have graduated in B.Tech Mechanical Engg.
+         Now a passionate developer, having strong administrative and communication skill. I have completed the full stack web development(Full-Time) course in
+         Masai (Skilling platform) with immense 1200+ coding and industry level projects.</p><br>
+        <br>
+        <h1 class="text">Professional Summary</h1><br>
+        <p>A highly motivated and ambitious web developer boasts a strong proficiency in HTML, CSS, and JavaScript, having amassed over 1300 hours of hands-on experience and successfully developed two fully functional cloned web applications. Their impressive work speaks to their ability to create clean, efficient, and user-friendly interfaces. They excel in collaborative settings and are known for their problem-solving mindset, as well as their strong communication skills which make them a valuable team member. They take pride in delivering high-quality work and meeting project deadlines, and are eager to leverage their skills and experience to contribute to a challenging and exciting role in a dynamic tech company.</p>
+       </div>
+     </div>
+    </div>
+  </section>
+
+  <!-- skill section -->
+  <section class="nav-link skills" id="skills">
+    <div class="max-width">
+      <h2 class="title">My Skills</h2>
+     <div class="container">
+
+      <div  class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/JAVA.png" alt="" class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">JAVA</h3>
+          <div>
+            <p>Java is a high-level programming language
+               used for developing a wide range of applications, from mobile apps to enterprise systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="skills"class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/MYSql.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">MySQL</h3>
+          <div>
+            <p>MySQL is a popular open-source relational database management system 
+              (RDBMS) that is widely used for web applications and other data-driven systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div  class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/SQL.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">SQL</h3>
+          <div>
+            <p>SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases.
+               It is widely used in data-driven applications.!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/spring.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">Spring Boot</h3>
+          <div>
+            <p>Spring Boot is a popular open-source framework for developing Java-based web applications 
+              that simplifies the process of creating standalone, production-ready applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div  class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img   src="images/HTML.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">HTML</h3>
+          <div>
+            <p>HTML (Hypertext Markup Language) is a standard markup 
+              language used for creating web pages and applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div  class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/CSS.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">CSS</h3>
+          <div>
+            <p>CSS (Cascading Style Sheets) is a language used to describe 
+              the presentation of web pages, including layout, colors, and fonts.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card" class="skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/JS.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">JavaScript</h3>
+          <div>
+            <p>JS (JavaScript) is a scripting language used to create interactive and 
+              dynamic web content and web applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-card skill-box">
+        <div class="skill-title">
+          <div class="skills-card-img img">
+            <img  src="images/git.png" alt=""  class="skill-icon">
+          </div>
+          <h3 class="skills-card-name">Git</h3>
+          <div>
+            <p>Git is a popular version control system used for managing and 
+              tracking changes to software code and other digital content</p>
+          </div>
+        </div>
+      </div>
+
+     </div>
+    </div>
+  </section>
+
+  <!-- project section -->
+
+  <section class="nav-link projects project" id="projects">
+    <div class="max-width">
+      <h2 class="title">Projects</h2>
+     <div class="project-content">
+
+      <div  class="project-card card">
+        <div class="img-div">
+          <img src="images/EliteStore.png" alt="">
+        </div>
+        <h1 class="project-title" >DermStore (Clone)</h1>
+        <p class="project-description">Women & Men's Skin Care E-Commerce</p>
+        <button class="project-tech-stack">HTML</button>
+        <button class="project-tech-stack">CSS</button>
+        <button class="project-tech-stack">JS</button>
+        <div class="icon">
+          <span style="color:blue" class="project-github-link"><a class="project-github-link" href="https://github.com/gsandha/fluffy-collar-7061" target="_blank"><i class="fab fa-github"></i></a></span>
+          <span style="margin-left: 10px;" class="project-deployed-link"><a class="project-deployed-link" href="https://ellitestore.netlify.app" target="_blank"><i style="color:crimson" class="fab fa-octopus-deploy"></i></a></span>
+        </div>
+      </div>
+     
+      <div  class="project-card card">
+        <div class="img-div">
+          <img src="images/Travel.png" alt="">
+        </div>
+        <h1 class="project-title">Travel-O-City (Clone)</h1>
+        <p class="project-description">Travel Booking Services</p>
+        <button class="project-tech-stack">HTML</button>
+        <button class="project-tech-stack">CSS</button>
+        <button class="project-tech-stack">JS</button>
+        <div class="icon">
+          <span style="color:blue" class="project-github-link"><a class="project-github-link" href="https://github.com/manjeetgodara/restful-0933" target="_blank"><i class="fab fa-github"></i></a></span>
+          <span style="margin-left: 10px;" class="project-deployed-link"><a  class="project-deployed-link" href="https://venerable-truffle-e23cdd.netlify.app/" target="_blank"><i style="color:crimson" class="fab fa-octopus-deploy"></i></a></span>
+        </div>
+      </div>
+
+      <div  class="project-card card">
+        <div class="img-div">
+          <img src="images/Hospital.png" alt="">
+        </div>
+        <h1 class="project-title">Hospital Records</h1>
+        <p class="project-description">Hospital Doctors Records</p>
+        <button class="project-tech-stack">HTML</button>
+        <button class="project-tech-stack">CSS</button>
+        <button class="project-tech-stack">JS</button>
+        <div class="icon">
+          <span style="color:blue" class="project-github-link"><a class="project-github-link" href="https://github.com/masai-course/manjeet_fw22_0933/tree/master/unit-2/sprint-3/day-3/assignments/PT-WEB-05%20C2_905871" target="_blank"><i class="fab fa-github"></i></a></span>
+          <span style="margin-left: 10px;" class="project-deployed-link"><a  class="project-deployed-link" href="https://coruscating-cobbler-164243.netlify.app" target="_blank"><i style="color:crimson" class="fab fa-octopus-deploy"></i></a></span>
+        </div>
+      </div>
+
+      <div  class="project-card card">
+        <div class="img-div">
+          <img src="images/bank.png" alt="">
+        </div>
+        <h1 class="project-title">Online Banking System (Backend)</h1>
+        <p class="project-description">Banking Services</p>
+        <button class="project-tech-stack">JAVA</button>
+        <button class="project-tech-stack">SQL</button>
+        <button class="project-tech-stack">JDBC</button>
+        <div class="icon">
+          <span style="color:blue"><a  class="project-github-link" href="https://github.com/manjeetgodara/awesome-market-801" target="_blank"><i class="fab fa-github"></i></a></span>
+          <span style="margin-left: 10px;" class="project-deployed-link"><a  class="project-deployed-link" href="https://drive.google.com/file/d/1psU7hPd5YiLXRt4CS9ttFJmJTuKzHn5c/view?usp=share_link" target="_blank"><i style="color:crimson" class="fab fa-octopus-deploy"></i></a></span>
+        </div>
+      </div>
+
+      <div  class="project-card card">
+        <div class="img-div">
+          <img src="images/Amaze.png" alt="">
+        </div>
+        <h1 class="project-title">LifeStyle (Clone)</h1>
+        <p class="project-description">Indian E-Commerce Website</p>
+        <button class="project-tech-stack">HTML</button>
+        <button class="project-tech-stack">CSS</button>
+        <button class="project-tech-stack">JS</button>
+        <div class="icon">
+          <span style="color:blue" class="project-github-link"><a  class="project-github-link" href="https://github.com/manjeetgodara/bent-anger-560" target="_blank"><i class="fab fa-github"></i></a></span>
+          <span style="margin-left: 10px;" class="project-deployed-link"><a class="project-deployed-link" href="https://cute-bubblegum-f19f12.netlify.app" target="_blank"><i style="color:crimson" class="fab fa-octopus-deploy"></i></a></span>
+        </div>
+      </div>
+
+      <div  class="project-card card">
+        <div class="img-div">
+          <img src="images/MasaiTodo.png" alt="">
+        </div>
+        <h1 class="project-title">Todo Application</h1>
+        <p class="project-description">Todo Records</p>
+        <button class="project-tech-stack">HTML</button>
+        <button class="project-tech-stack">CSS</button>
+        <button class="project-tech-stack">JS</button>
+        <div class="icon">
+          <span style="color:blue" class="project-github-link"><a  class="project-github-link" href="https://github.com/masai-course/manjeet_fw22_0933/tree/master/unit-2/sprint-3/evaluation/web-masai-todo-template_201565/web-masai-todo-template" target="_blank"><i class="fab fa-github"></i></a></span>
+          <span style="margin-left: 10px;" class="project-deployed-link" ><a class="project-deployed-link" href="https://storied-seahorse-db7a41.netlify.app/" target="_blank"><i style="color:crimson" class="fab fa-octopus-deploy"></i></a></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+<!-- Gitstat -->
+<section class="git" id="git">
+  <div class="max-width">
+    <h2 class="title">GitStats</h2>
+   <div class="git-content">
+    <div class="react-activity-calendar calendar">
+      <!-- Loading stuff -->
+      Loading the data just for you.
+  </div>
+   </div>
+  </div>
+</section>
+
+<!-- contacts -->
+<section class="nav-link contact" id="contact">
+  <div class="max-width">
+    <h2 class="title">Contact Me</h2>
+     <div class="contact-content">
+      <div class="column left">
+        <div class="text">Get in Touch</div>
+        <p>Let's build something amazing (Reach out anytime)</p>
+        <div class="icons">
+
+          <div class="row">
+            <i class="fas fa-user"></i>
+            <div class="info">
+              <div class="head">Name</div>
+              <div class="sub-title">Manjeet</div>
+            </div>
+          </div>
+
+        
+
+           <div class="row">
+           <i class="fa-solid fa-phone"></i>
+            <div class="info">
+              <div class="head">Mobile Number</div>
+              <div id="contact-phone" class="sub-title">9953462784</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <i class="fas fa-envelope"></i>
+            <div class="info">
+              <div class="head">Email</div>
+              <div id="contact-email" class="sub-title">godaramanjeet293@gmail.com</div>
+            </div>
+          </div>
+
+            <div class="row">
+            <i class="fa-brands fa-linkedin"></i>
+            <div class="info">
+              <div class="head">Linked In</div>
+              <div id="contact-github" class="sub-title">manjeet-444a611a0</div>
+            </div>
+          </div>
+
+        </div>
+       </div>
+
+       <div class="column right">
+        <div class="text">Message Me</div>
+        <form action="#">
+          <div class="fields">
+            <div class="field name">
+              <input type="text" placeholder="Name" required>
+            </div>
+
+            <div class="field email">
+              <input type="email" placeholder="Email" required>
+            </div>
+          </div>
+            <div class="field">
+              <input type="text" placeholder="Subject" required>
+            </div>
+
+            <div class="field textarea">
+            <textarea cols="30" rows="10" placeholder="Describe project.." required></textarea>
+            </div>
+
+            <div class="button">
+              <button type="submit">Send Message</button>
+            </div>
+
+          
+        </form>
+       </div>
+
+     </div>
+   
+  </div>
+</section>
+
+
+<!-- footer section -->
+<footer>
+  <span style="color:#fff">Created By<a href="#"> Manjeet</a> | <span class="far fa-copyright"></span> 2023 All right reserved.</span>
+</footer>
+ 
+<script>
+  GitHubCalendar(".calendar", "manjeetgodara");
+  // or enable responsive functionality
+  GitHubCalendar(".calendar", "manjeetgodara", { responsive: true });
+</script>
+  <script src="index.js"></script>
+</body>
+</html>
