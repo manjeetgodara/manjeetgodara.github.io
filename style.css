@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    color:#fff;
+}
+
+ .contact, footer{
+    font-family: 'Poppins',sans-serif;
+}
+/* navbar */
+.navbar{
+
+    padding: 30px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-family: 'Ubuntu',sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+   background: crimson; 
+  padding: 15px 0px;
+}
+
+.navbar.sticky .logo a span{
+    color:#fff;
+
+}
+.navbar .max-width{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color:crimson;
+    transition: all 0.3s ease;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+transition: color 0.3s ease;
+}
+
+.navbar.sticky .menu li a:hover{
+    color:#fff;
+}
+
+.navbar .menu li a:hover{
+    color:crimson;
+}
+
+.navbar .menu li  button{
+    color: #fff;
+font-size: 18px;
+font-weight: 500;
+margin-left: 25px;
+transition: color 0.3s ease;
+background-color: black;
+border:none;
+text-decoration: none;
+}
+.navbar.sticky .menu li  button:hover{
+    color:#fff;
+    
+}
+
+.navbar .menu li button:hover{
+    color:crimson;
+}
+
+/* menu-btn */
+.menu-btn{
+    color:#fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+/* home */
+.home{
+    display:flex;
+    background: url("images/Ast.png") no-repeat right;
+    height:100vh;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+    color:#fff;
+    
+}
+
+.home .max-width{
+    margin:auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin:5px 0;
+}
+
+.home .home-content .text-3 span{
+    color:crimson;
+    font-weight: 500;
+}
+.home .home-content a{
+    display: inline-block;
+    background: crimson;
+    color:#fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border:2px solid crimson;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: #fff;
+    background: none;
+}
+
+
+
+.genai{
+    background-color: #141414;
+}
+
+
+
+/* about */
+#about{
+    padding: 100px 0;
+    background-color: #141414;
+}
+
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.about .about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width:45%;
+}
+
+.about .about-content .left img{
+    height:400px;
+    width:400px;
+    object-fit: cover;
+}
+.about .about-content .right{
+    width:45%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:crimson;
+    font-family: 'Poppins',sans-serif;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 14px;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* skills section start */
+
+section{
+    padding: 100px 0;
+    
+}
+.skills .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap:1rem;
+    padding: 1rem 80px;
+    font: 1.2 rem;
+}
+
+.skill-box{
+    padding: 1rem;
+    color:#ddd;
+    cursor:pointer;
+}
+
+.skill-box p{
+    font-size: 12px;
+}
+
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5 rem;
+    position:relative;
+}
+.skill-title::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    right:50%;
+    width:35px;
+    height:4px;
+    border-radius: 2px 0 0 2px;
+    background-color: #2ecc71;
+
+}
+
+.skill-title::before{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:50%;
+    width:35px;
+    height:4px;
+    border-radius: 0 2px 2px 0;
+    background-color: crimson;
+
+}
+
+
+.img{
+    width:90px;
+    height:90px;
+    position: relative;
+    border-radius: 45px;
+    background-color: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img:after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width: 50px;
+    height:90px;
+    background-color: rgba(100,100,100,0.5);
+    border-radius: 45px 0 0 45px;
+}
+
+.skill-title h3{
+    color:#fff;
+    margin: 0.5rem;
+    font-family: 'Poppins',sans-serif;
+}
+
+.skill-icon{
+    width:50px;
+    z-index: 2;
+}
+
+
+/* projects */
+
+#project{
+        padding: 100px 0;
+        background-color: #141414;
+}
+
+.project .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.project-content{
+   display: grid;
+   grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+   gap:25px;
+}
+
+.card{
+    padding:30px 20px;
+    box-shadow: rgba(88, 88, 88, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+}
+
+.img-div img{
+    width:100%;
+    height:200px;
+}
+
+.card h1{
+    margin-top: 10px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.card p{
+    margin-top: 10px;
+}
+
+.card button{
+    margin-top: 10px;
+    padding: 8px 15px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.card .icon{
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+/* gitstats */
+
+.git .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+
+.git-content .calender{
+    width:100%;
+}
+
+#git-stat div{
+    display: flex;
+}
+
+#github-streak-stats{
+    margin-left:20px;
+    margin-right: 30px;
+}
+
+#github-top-langs{
+    margin: auto;
+}
+
+#github-stats-card{
+    margin:auto;
+}
+
+/* contact */
+#contact{
+    padding: 100px 0;
+        background-color: #141414;
+}
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.contact-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact-content .column{
+    width:calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin:10px 0;
+}
+.contact .contact-content .row{
+    display:flex;
+    height:65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color:crimson;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title{
+    color:#b1b1b1;
+}
+
+.contact .right form .fields{
+display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field{
+    height:45px;
+    width:100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height:100%;
+    width: 100%;
+    border:1px solid lightgrey;
+    border-radius: 6px;
+    outline:none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;
+}
+
+.contact .right form .textarea{
+    height:80px;
+}
+
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize:none;
+}
+
+.contact .right form .button{
+    height:47px;
+    width:170px;
+}
+
+.contact .right form .button button{
+    width:100%;
+    height:100%;
+    border:2px solid crimson;
+    background: crimson;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius:6px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right form .button button:hover{
+    color:crimson;
+    background: none;
+}
+
+
+/* footer section */
+footer{
+    padding:20px 23px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Ubuntu',sans-serif;
+}
+footer span a{
+    color:crimson;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}
+
+
+
+/* repsonsive-media query start */
+
+
+
+@media (max-width:1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+
+    .about .about-content .left img{
+        height:350px;
+        width:350px;
+    }
+
+    .container{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .contact-content{
+        flex-direction: column;
+        
+    }
+
+    .git-content .calender{
+        width:20%;
+        margin: auto;
+        font-size: medium;
+    }
+
+    #git-stat div{
+        flex-direction: column;
+    }
+
+    #github-streak-stats{
+    
+       
+        margin:auto;
+        width:70%;
+    }
+    
+    #github-top-langs{
+        margin: auto;
+        width:70%;
+    }
+
+    #github-stats-card{
+        margin:auto;
+        width:70%;
+    }
+  
+}
+
+@media(max-width:991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index:999;
+    }
+
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .menu-btni i.active:before{
+        content:"\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height:100vh;
+        width:100%;
+        left:-100%;
+        top:0;
+        background:#111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin:20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+   
+    .about .about-content .column{
+        width:50%;
+
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin:0 auto 60px;
+    }
+    .about .about-content .right{
+        flex:100%;
+    }
+
+    .max-width{
+        max-width: 800px;
+        
+    }
+
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        padding: 2rem 50px;
+    }
+
+   .contact .contact-content .column{
+    width:100%;
+    margin-bottom: 35px;
+   }
+  
+   .git-content .calender{
+    width:65%;
+    font-size: small;
+}
+    
+}
+
+@media (max-width:870px){
+    .home{
+        background-image: none;
+    }
+}
+
+@media (max-width: 690px){
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size:20px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+        padding: 10px 25px;
+    }
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .git-content .calender{
+        width:60%;
+        font-size: small;
+    }
+    
+}
+
+@media (max-width:500px){
+    .max-width{
+ padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+    .git-content .calender{
+        width:50%;
+        font-size: small;
+    }
+  
+}
+
+
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    .project-content {
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .project-content {
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 15px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .card {
+      padding: 20px;
+    }
+    .img-div img {
+      height: 150px;
+    }
+    .card h1 {
+      font-size: 24px;
+    }
+    .card p {
+      font-size: 14px;
+    }
+    .card button {
+      font-size: 12px;
+    }
+    .card .icon {
+      font-size: 24px;
+    }
+  }
+  
+  
+  
+  
+  
+  
