@@ -26,7 +26,7 @@ var typed=new Typed(".typing",{
 
 function downloadAndOpenResume(event) {
   // URL of the resume PDF
-  const resumeUrl = 'https://drive.google.com/file/d/1Xv6JH51EJ_mXVHlkhtJyUGd8iVo6kUdv/view?usp=sharing';
+  const resumeUrl = 'https://drive.google.com/file/d/1DMK_4O-cgixKwwvwRCekBH1I_8dNbk0a/view?usp=sharing';
 
   // Open the PDF in a new tab
   window.open(resumeUrl, 'ResumeTab');
